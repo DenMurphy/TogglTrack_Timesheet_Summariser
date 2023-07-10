@@ -103,7 +103,7 @@
 
         // Build the Toggl API url.
         var dateFilter = date.format('YYYY-MM-DD');
-        var apiUrl = 'https://api.toggl.com/reports/api/v3/summary?user_agent=none&workspace_id=' + workspaceId + '&user_ids=' + userid + '&since=' + dateFilter + '&until=' + dateFilter;
+        var apiUrl = 'https://api.toggl.com/reports/api/v2/summary?user_agent=none&workspace_id=' + workspaceId + '&user_ids=' + userid + '&since=' + dateFilter + '&until=' + dateFilter;
 
         // Disable all buttons.
         div.find('button').attr('disabled', 'disabled');
